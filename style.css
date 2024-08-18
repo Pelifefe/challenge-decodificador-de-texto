@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #c1d7df;
+}
+main {
+    flex: 1; /* Fazer com que o main ocupe todo o espaço disponível */
+}
+
+img{
+    width: 50%;
+    bottom: 40%;
+    left: 70%;
+    position: fixed;
+}
+
+#titulo-principal{
+    padding: 75px;
+    font-size: 40px;
+    text-align: left;
+    color:#214fd8;
+}
+
+#titulo-principal span{
+    color: white;
+    background-color: #214fd8;
+    padding: 10px;
+    border-radius:50%;
+}
+
+/*Elementos apartir daqui:*/
+.conteudo{
+    width: 80%;
+    padding: 0px 75px 50px 75px;
+}
+.conteudo__texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os elementos */
+    flex-wrap: wrap;
+}
+
+.conteudo__texto__input, .conteudo__texto__resultado {
+    flex: 1; /* Faz com que ambos ocupem o mesmo espaço disponível */
+    width: 100%;
+    max-width: 800px; /* Largura máxima igual para ambos */
+    height: 265px; /* Altura igual para ambos */
+    padding: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none; /* Impede o redimensionamento da área de texto */
+}
+
+.conteudo__texto__input {
+    text-align: left; /* Alinha o texto à esquerda */
+    padding-bottom: 21%; /* Adiciona um espaçamento interno no topo para imitar o comportamento do textarea */
+}
+
+.conteudo__texto__input:focus, .conteudo__texto__resultado:focus {
+    outline: none; /* Remove o contorno padrão de foco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao redor do elemento */
+}
+
+button {
+    font-family: "Roboto Condensed", sans-serif; /* Fonte dos botões */
+    font-size: 1rem; /* Tamanho da fonte */
+    padding: 10px 50px; /* Espaçamento interno */
+    border: none; /* Remover bordas padrão */
+    border-radius: 5px; /* Arredondar bordas */
+    cursor: pointer; /* Mostrar cursor de mão */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave para alterações */
+}
+.conteudo__button{
+    padding: 30px 0px 30px 0px;
+}
+
+/* Estilo específico para o botão de criptografar */
+.conteudo__button__criptografar,
+.conteudo__button__descriptografar,
+.conteudo__button__copiar {
+    background-color: #214fd8;
+    color: white;
+}
+
+/* Estado de foco (quando o botão é clicado) */
+button:focus {
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Estado de hover (quando o mouse passa sobre o botão) */
+button:hover {
+    background-color: #773cd6; /* Cor de fundo verde mais escura para o botão criptografar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+}
+
+.rodape{
+    color: white;
+    background-color:#4682B4;
+    padding: 24px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 100%; /* Garantir que o rodapé ocupe toda a largura */
+    position: relative;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: #052997;
+}
