@@ -39,7 +39,7 @@ img {
 }
 
 #titulo-principal {
-    padding: 75px;
+    padding: 55px;
     font-size: 40px;
     text-align: left;
     color: var(--primary-color);
@@ -130,6 +130,7 @@ button {
 .conteudo__button__criptografar,
 .conteudo__button__descriptografar,
 .conteudo__button__copiar {
+    position: absolute; 
     background-color: var(--primary-color);
     color: white;
 }
@@ -146,6 +147,13 @@ button:hover {
     /* Cor de fundo verde mais escura para o botão criptografar */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Adiciona uma sombra */
+}
+.conteudo__button__descriptografar{
+    margin-left: 24.5%;  
+}
+.conteudo__button__copiar {
+    width: 30%;
+    margin-left: 45%;  
 }
 
 .rodape {
