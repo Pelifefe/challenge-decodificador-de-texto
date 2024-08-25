@@ -14,10 +14,11 @@
         <h1 id="titulo-principal"><span>Criptografe</span> sua mensagem</h1>
         <img src="images/fundo.png" alt="">
         <div class="conteudo">
+            <strong><p id="mensagem-erro"></p></strong>
             <div class="conteudo__texto">
-                <input class="conteudo__texto__input" type="text" placeholder="Digite aqui"
+                <input type="text" id="texto-input" placeholder="Digite aqui"
                     alt="campo para digitar">
-                <textarea class="conteudo__texto__resultado" rows="25" cols="50" readonly
+                <textarea id="texto-resultado" rows="25" cols="50" readonly
                     placeholder="Resultado" alt="campo do resultado"></textarea>
             </div>
             <div class="conteudo__button">
@@ -30,6 +31,7 @@
     <footer class="rodape">
         <p>Desenvolvido por <a href="https://github.com/Pelifefe " alt="Perfil GitHub">Felippe Pedrosa</a></p>
     </footer>
+    <script src="app.js" defer></script>
 </body>
 
 </html>
